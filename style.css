@@ -1,0 +1,210 @@
+/*—— Brand Palette ——*/
+:root {
+  --clr-jasmine:   #F4D58D;
+  --clr-powder:    #A9BCD0;
+  --clr-orange:    #BF0603;
+  --clr-charcoal:  #373F51;
+  --ff-heading:    'Tagesschrift', serif;
+  --ff-body:       'Fira Sans', sans-serif;
+}
+
+/*—— Reset + Base —————————————————————————*/
+*,
+*::before,
+*::after { box-sizing: border-box; margin:0; padding:0; }
+body {
+  font-family: var(--ff-body);
+  background: var(--clr-jasmine);
+  color: var(--clr-charcoal);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/*—— Header ————————————————————————————————————*/
+.site-header {
+  background: var(--clr-charcoal);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.logo h1 {
+  font-family: var(--ff-heading);
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+.logo .tagline {
+  font-size: 1rem;
+  color: var(--clr-powder);
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.main-nav a {
+  color: var(--clr-jasmine);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.main-nav a:hover {
+  background: var(--clr-orange);
+  color: white;
+}
+
+/*—— Landing Hero ——————————————————————————*/
+.landing {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.hero h2 {
+  font-family: var(--ff-heading);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+.social-links a {
+  display: inline-block;
+  margin: 0 0.5rem;
+  font-weight: 600;
+  color: var(--clr-charcoal);
+  border: 2px solid var(--clr-powder);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+.social-links a:hover {
+  background: var(--clr-powder);
+  color: var(--clr-charcoal);
+}
+
+/* —— Hero Landing —— */
+.hero-landing {
+  position: relative;
+  height: 100vh;                         /* full viewport height */
+  background: url('hero-bg.jpg')  /* your hero image */
+              center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-jasmine);             /* light text on dark overlay */
+}
+
+.hero-overlay {
+  text-align: center;
+  padding: 2rem;
+  max-width: 800px;
+  background: rgba(0, 0, 0, 0.5);        /* semi-transparent black layer */
+  border-radius: 8px;
+}
+
+.hero-overlay h2 {
+  font-family: var(--ff-heading);
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.hero-overlay p {
+  font-family: var(--ff-body);
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-overlay .social-links a {
+  margin: 0 0.5rem;
+  color: var(--clr-jasmine);
+  background: var(--clr-charcoal);
+  border: 2px solid var(--clr-jasmine);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+.hero-overlay .social-links a:hover {
+  background: var(--clr-orange);
+}
+
+@media (max-width: 640px) {
+  .hero-overlay h2 { font-size: 2.5rem; }
+  .hero-overlay p  { font-size: 1.25rem; }
+}
+
+/*—— Projects Grid ——*/
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 4rem 0;
+}
+
+/*—— Project Card ——*/
+.project-card {
+  background: var(--clr-powder);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.project-card h3 {
+  font-family: var(--ff-heading);
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: var(--clr-charcoal);
+}
+.project-card p {
+  flex: 1;
+  font-family: var(--ff-body);
+  font-size: 1rem;
+  margin: 0 1rem 1rem;
+  color: var(--clr-charcoal);
+}
+.project-card .btn {
+  display: block;
+  text-align: center;
+  margin: 0 1rem 1.5rem;
+  padding: 0.5rem;
+  background: var(--clr-charcoal);
+  color: var(--clr-jasmine);
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+.project-card .btn:hover {
+  background: var(--clr-orange);
+  color: white;
+}
+
+
+/*—— Footer ———————————————————————————————————*/
+.site-footer {
+  background: var(--clr-powder);
+  color: var(--clr-charcoal);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/*—— Responsive Breakpoints ———————————————————*/
+@media (min-width: 640px) {
+  .hero h2 { font-size: 4rem; }
+  .main-nav ul { gap: 2rem; }
+}
+
+

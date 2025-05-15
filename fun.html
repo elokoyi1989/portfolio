@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Play</title>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" 
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* Gallery grid */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .gallery a img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 4px;
+      display: block;
+    }
+
+    /* Lightbox container (hidden by default) */
+    .lightbox {
+      position: fixed;
+      top:0; left:0; right:0; bottom:0;
+      background: rgba(0,0,0,0.8);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 1rem;
+    }
+    /* Show when targeted */
+    .lightbox:target {
+      display: flex;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 4px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+    .lightbox a.close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 2rem;
+      color: white;
+      text-decoration: none;
+      line-height: 1;
+    }
+  </style>
+</head>
+
+<body>
+   <!-- Site Header -->
+  <header class="site-header">
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="project.html" class="active">Work</a></li>
+        <li><a href="fun.html">Play</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1 style="text-align: center;">Film Photography</h1>
+  <h3 style="text-align: center;">My love for design and storytelling expands to many different mediums like film photography.</h3>
+  <section class="gallery">
+    <a href="#img1"><img src="images/9B1A7420.jpg"      alt="9B1A7420"/></a>
+    <a href="#img2"><img src="images/88492R1-R01-006.jpg" alt="88492R1-R01-006"/></a>
+    <a href="#img3"><img src="images/88492R1-R01-020.jpg" alt="88492R1-R01-020"/></a>
+    <a href="#img4"><img src="images/88492R1-R01-026.jpg" alt="88492R1-R01-026"/></a>
+    <a href="#img5"><img src="images/88492R2-R01-023A 2.jpg" alt="88492R2-R01-023A 2"/></a>
+    <a href="#img6"><img src="images/000072350031.jpg"   alt="000072350031"/></a>
+    <a href="#img7"><img src="images/000072360028.jpg"   alt="000072360028"/></a>
+    <a href="#img8"><img src="images/000084490002.jpg"   alt="000084490002"/></a>
+    <a href="#img9"><img src="images/001379250007.jpg"   alt="001379250007"/></a>
+    <a href="#img10"><img src="images/001379260011.jpg"  alt="001379260011"/></a>
+    <a href="#img11"><img src="images/240712000078720014.jpg" alt="240712000078720014"/></a>
+    <a href="#img12"><img src="images/240712000078720025.jpg" alt="240712000078720025"/></a>
+    <a href="#img13"><img src="images/240908000008870007.jpg" alt="240908000008870007"/></a>
+    <a href="#img14"><img src="images/240908000008870022.jpg" alt="240908000008870022"/></a>
+    <a href="#img15"><img src="images/240908000008870023.jpg" alt="240908000008870023"/></a>
+    <a href="#img16"><img src="images/hero-bg..jpg"      alt="hero-bg"/></a>
+    <a href="#img17"><img src="images/IMG_0418.jpg"       alt="IMG_0418"/></a>
+    <a href="#img18"><img src="images/IMG_0419.jpg"       alt="IMG_0419"/></a>
+    <a href="#img20"><img src="images/IMG_0431.jpg"       alt="IMG_0431"/></a>
+    <a href="#img21"><img src="images/IMG_0438.jpg"       alt="IMG_0438"/></a>
+    <a href="#img22"><img src="images/IMG_0790.jpg"       alt="IMG_0790"/></a>
+    <a href="#img23"><img src="images/IMG_2094.jpg"       alt="IMG_2094"/></a>
+    <a href="#img24"><img src="images/IMG_2097.jpg"       alt="IMG_2097"/></a>
+    <a href="#img25"><img src="images/IMG_2171.jpg"       alt="IMG_2171"/></a>
+    <a href="#img26"><img src="images/IMG_2203.jpg"       alt="IMG_2203"/></a>
+    <a href="#img27"><img src="images/IMG_2236.jpg"       alt="IMG_2236"/></a>
+    <a href="#img28"><img src="images/me and bea.jpg"     alt="me and bea"/></a>
+    <a href="#img29"><img src="images/some_c-41_roll_11_22_2024_000183480003 2.jpg" alt="roll_000183480003"/></a>
+    <a href="#img30"><img src="images/some_c-41_roll_11_22_2024_000183480027 2.jpg" alt="roll_000183480027"/></a>
+    <a href="#img31"><img src="images/some_c-41_roll_11_22_2024_000183490025.jpg" alt="roll_000183490025"/></a>
+  </section>
+
+  <!-- Lightbox overlays -->
+  <div id="img1"  class="lightbox"><a href="#" class="close">&times;</a><img src="images/9B1A7420.jpg"    alt="9B1A7420"/></div>
+  <div id="img2"  class="lightbox"><a href="#" class="close">&times;</a><img src="images/88492R1-R01-006.jpg" alt="88492R1-R01-006"/></div>
+  <div id="img3"  class="lightbox"><a href="#" class="close">&times;</a><img src="images/88492R1-R01-020.jpg" alt="88492R1-R01-020"/></div>
+  <div id="img4"  class="lightbox"><a href="#" class="close">&times;</a><img src="images/88492R1-R01-026.jpg" alt="88492R1-R01-026"/></div>
+  <div id="img5"  class="lightbox"><a href="#" class="close">&times;</a><img src="images/88492R2-R01-023A 2.jpg" alt="88492R2-R01-023A 2"/></div>
+  <div id="img6"  class="lightbox"><a href="#" class="close">&times;</a><img src="images/000072350031.jpg"   alt="000072350031"/></div>
+  <div id="img7"  class="lightbox"><a href="#" class="close">&times;</a><img src="images/000072360028.jpg"   alt="000072360028"/></div>
+  <div id="img8"  class="lightbox"><a href="#" class="close">&times;</a><img src="images/000084490002.jpg"   alt="000084490002"/></div>
+  <div id="img9"  class="lightbox"><a href="#" class="close">&times;</a><img src="images/001379250007.jpg"   alt="001379250007"/></div>
+  <div id="img10" class="lightbox"><a href="#" class="close">&times;</a><img src="images/001379260011.jpg"  alt="001379260011"/></div>
+  <div id="img11" class="lightbox"><a href="#" class="close">&times;</a><img src="images/240712000078720014.jpg" alt="240712000078720014"/></div>
+  <div id="img12" class="lightbox"><a href="#" class="close">&times;</a><img src="images/240712000078720025.jpg" alt="240712000078720025"/></div>
+  <div id="img13" class="lightbox"><a href="#" class="close">&times;</a><img src="images/240908000008870007.jpg" alt="240908000008870007"/></div>
+  <div id="img14" class="lightbox"><a href="#" class="close">&times;</a><img src="images/240908000008870022.jpg" alt="240908000008870022"/></div>
+  <div id="img15" class="lightbox"><a href="#" class="close">&times;</a><img src="images/240908000008870023.jpg" alt="240908000008870023"/></div>
+  <div id="img16" class="lightbox"><a href="#" class="close">&times;</a><img src="images/hero-bg..jpg"        alt="hero-bg"/></div>
+  <div id="img17" class="lightbox"><a href="#" class="close">&times;</a><img src="images/IMG_0418.jpg"       alt="IMG_0418"/></div>
+  <div id="img18" class="lightbox"><a href="#" class="close">&times;</a><img src="images/IMG_0419.jpg"       alt="IMG_0419"/></div>
+  <div id="img20" class="lightbox"><a href="#" class="close">&times;</a><img src="images/IMG_0431.jpg"       alt="IMG_0431"/></div>
+  <div id="img21" class="lightbox"><a href="#" class="close">&times;</a><img src="images/IMG_0438.jpg"       alt="IMG_0438"/></div>
+  <div id="img22" class="lightbox"><a href="#" class="close">&times;</a><img src="images/IMG_0790.jpg"       alt="IMG_0790"/></div>
+  <div id="img23" class="lightbox"><a href="#" class="close">&times;</a><img src="images/IMG_2094.jpg"       alt="IMG_2094"/></div>
+  <div id="img24" class="lightbox"><a href="#" class="close">&times;</a><img src="images/IMG_2097.jpg"       alt="IMG_2097"/></div>
+  <div id="img25" class="lightbox"><a href="#" class="close">&times;</a><img src="images/IMG_2171.jpg"       alt="IMG_2171"/></div>
+  <div id="img26" class="lightbox"><a href="#" class="close">&times;</a><img src="images/IMG_2203.jpg"       alt="IMG_2203"/></div>
+  <div id="img27" class="lightbox"><a href="#" class="close">&times;</a><img src="images/IMG_2236.jpg"       alt="IMG_2236"/></div>
+  <div id="img28" class="lightbox"><a href="#" class="close">&times;</a><img src="images/me and bea.jpg"     alt="me and bea"/></div>
+  <div id="img29" class="lightbox"><a href="#" class="close">&times;</a><img src="images/some_c-41_roll_11_22_2024_000183480003 2.jpg" alt="roll_000183480003"/></div>
+  <div id="img30" class="lightbox"><a href="#" class="close">&times;</a><img src="images/some_c-41_roll_11_22_2024_000183480027 2.jpg" alt="roll_000183480027"/></div>
+  <div id="img31" class="lightbox"><a href="#" class="close">&times;</a><img src="images/some_c-41_roll_11_22_2024_000183490025.jpg" alt="roll_000183490025"/></div>
+
+  <!-- footer… -->
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personas</title>
+  <!-- Google Fonts & your existing style.css -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+  <style>
+    /* ——— Page-specific Layout Overrides ——— */
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .container section {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .container section h2 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-family: var(--ff-heading);
+    }
+
+    .container section p,
+    .container section ul {
+      margin-bottom: 1.5rem;
+    }
+
+    .container section figure {
+      margin: 1.5rem 0;
+    }
+    .container section figure img {
+      border-radius: 4px;
+      max-width: 100%;
+      display: block;
+    }
+    </style>
+<body>
+  <!-- Site Header -->
+  <header class="site-header">
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="project.html" class="active">Work</a></li>
+        <li><a href="fun.html">Play</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <!-- Case Study Content -->
+    <div class="container">
+      <!-- Role & Team -->
+      <section>
+        <h2>Role &amp; Team</h2>
+        <p><strong>My role:</strong> UX Designer &amp; Producer</p>
+        <p><strong>Team:</strong> Collaborated with 2 filmmakers, 1 developer</p>
+      </section>
+
+      <!-- Context & Problem -->
+      <section>
+        <h2>Context &amp; Problem</h2>
+        <p>Describe where this project came from, who it’s for, and the core problem you solved.</p>
+        <figure>
+          <img src="images/project-brief.png" alt="Project brief screenshot" />
+          <figcaption>Original project brief outlining the problem.</figcaption>
+        </figure>
+      </section>
+
+      <!-- Research -->
+      <section>
+        <h2>Research</h2>
+        <p>Summarize user interviews, competitive analysis, surveys, or analytics you used to inform your design:</p>
+        <ul>
+          <li>Interviewed 5 commuters to understand kiosk pain points</li>
+          <li>Ran a timed usability test on the original interface</li>
+          <li>Reviewed film festival feedback for pacing &amp; tone</li>
+        </ul>
+      </section>
+
+      <!-- Process & Iterations -->
+      <section>
+        <h2>Process &amp; Iterations</h2>
+        <p>Key wireframes, state diagrams, and design iterations:</p>
+        <figure>
+          <img src="images/wireframe-1.png" alt="Low-fidelity wireframe" />
+          <figcaption>First wireframe mapping user flow.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/wireframe-2.png" alt="Refined wireframe" />
+          <figcaption>Second iteration with card-based layout.</figcaption>
+        </figure>
+      </section>
+
+      <!-- Solution -->
+      <section>
+        <h2>Solution</h2>
+        <p>Present your final mockups and explain how they solve the initial problems.</p>
+        <figure>
+          <img src="images/final-mockup.png" alt="Final mockup screenshot" />
+          <figcaption>Final responsive design on desktop.</figcaption>
+        </figure>
+      </section>
+
+      <!-- Learnings & Next Steps -->
+      <section>
+        <h2>Learnings &amp; Next Steps</h2>
+        <ul>
+          <li>Keyboard users appreciated the skip-link and focus outlines.</li>
+          <li>Further A/B testing recommended for CTA wording.</li>
+          <li>Next: implement live search suggestions via JavaScript.</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <p>© 2025 Elizabeth • Designed &amp; Built by Me</p>
+  </footer>
+</body>
+</html>
