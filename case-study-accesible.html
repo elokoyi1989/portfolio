@@ -13,7 +13,7 @@
 </head>
 
   <style>
-    /* ——— Page-specific Layout Overrides ——— */
+
     .container {
       max-width: 960px;
       margin: 2rem auto;
@@ -67,12 +67,12 @@
   <div class="container">
     <!-- Project Background -->
     <section id="overview">
-      <h2>Story &amp; Scope</h2>
+      <h2>Context</h2>
       <p>
-        In “Accessible Components” I set out to reimagine
-        the Mac File Navigator’s dropdown.
-        Though dropdowns seem simple, they can often be exclusive to
-        keyboard and screen-reader users. My goal was to uncover 
+        In “Accessible Components,” I set out to reimagine
+        the Mac File Navigator’s dropdown for an assignment in a design interaction course at Brown University.
+        Though many design components, like dropdowns, can seem simple, they can often exclude
+        keyboard and screen-reader users. My goal was to design 
         a more seamless experience for all users.
       </p>
     </section>
@@ -81,13 +81,14 @@
     <section id="analysis">
       <h2>Accessibility Audit</h2>
       <p>
-        I compared dropdowns in Netflix, YouTube, and the Mac File 
-        Navigator under both mouse and keyboard use. Key findings:
+        First, I compared dropdowns in Netflix, YouTube, and the Mac File 
+        Navigator under both mouse and keyboard use. I did this to take a more careful and intentional look at how different users with different
+         tools interact with interfaces. I created state models to visualize the differences in interaction:
       </p>
+      <p>Some issues I noted: </p>
       <ul>
-        <li>No visible ARIA labels or skip-links, confusing screen readers.</li>
-        <li>Keyboard users forced to tab through every menu item.</li>
-        <li>Mouse focus rings missing or inconsistent.</li>
+        <li>Lack of detailed ARIA labels </li>
+        <li>Keyboard users often haf to tab through every menu item.</li>
       </ul>
       <figure>
         <img src="images/initialmouse-keyboar.jpeg" alt="Original interaction state model" />
@@ -99,18 +100,19 @@
     <section id="redesign">
       <h2>The Redesign</h2>
       <p>
-       
+       In my redesign, I experiment with different tradeoffs and design decisions. With this design, I decided to focus on improving 
+       effiency for the keyboard users.
       </p>
       <figure>
         <img src="images/New-d.png" alt="Final dropdown mockup" />
-        <figcaption>Final mockup with visible focus ring and ARIA labels.</figcaption>
+        <figcaption>Final mockup with more proactive focus state and ARIA labels.</figcaption>
       </figure>
 
-      <h3>Key Enhancements</h3>
+      <h3>Key Changes</h3>
       <ul>
-        <li><strong>Lifted focus ring</strong>—always visible for keyboard users.</li>
+        <li><strong>Pre-selected Focus</strong>—jumping to the most recent action</li>
         <li><strong>First-letter navigation</strong>—type “T” to jump to “Tools.”</li>
-        <li><strong>Robust ARIA labels</strong>—clear context for screen readers.</li>
+        <li><strong>Robust ARIA labels</strong>—clearer context for screen readers.</li>
       </ul>
     </section>
 
@@ -124,9 +126,5 @@
     </section>
   </div>
 
-  <!-- Site Footer -->
-  <footer class="site-footer">
-    <p>© 2025 Elizabeth • Designed &amp; Built by Me</p>
-  </footer>
 </body>
 </html>

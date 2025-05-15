@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Personas</title>
-  <!-- Google Fonts & your existing style.css -->
+  <title>Responsive</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap"
     rel="stylesheet"
@@ -13,7 +12,6 @@
 </head>
 
   <style>
-    /* ——— Page-specific Layout Overrides ——— */
     .container {
       max-width: 960px;
       margin: 2rem auto;
@@ -63,73 +61,96 @@
 
     <!-- Case Study Content -->
     <div class="container">
-      <!-- Role & Team -->
-      <section>
-        <h2>Role &amp; Team</h2>
-        <p><strong>My role:</strong> UX Designer &amp; Producer</p>
-        <p><strong>Team:</strong> Collaborated with 2 filmmakers, 1 developer</p>
-      </section>
+      <h1>Responsive Redesign</h1>
+      <p>Redesigning the Berkshire Hathaway homepage to be more user-friendly and accessible.</p>
+  
 
-      <!-- Context & Problem -->
-      <section>
-        <h2>Context &amp; Problem</h2>
-        <p>Describe where this project came from, who it’s for, and the core problem you solved.</p>
-        <figure>
-          <img src="images/project-brief.png" alt="Project brief screenshot" />
-          <figcaption>Original project brief outlining the problem.</figcaption>
-        </figure>
-      </section>
+    <!-- Context & Problem -->
+    <section id="overview">
+      <h2>Context &amp; Problem</h2>
+      <p>Tasked with finding a poor web interface for the Brown University CS1300: Design Interaction course, I chose the notoriously bad
+        Berkshire Hathaway homepage. My goal was to redesign it to
+        be more user-friendly and accessible, while maintaining the brand's
+        minimalist aesthetic.
+      </p>
+      <figure>
+        <img src="images/berkshireog.png" alt="Original Berkshire Hathaway homepage">
+        <figcaption>Original homepage.</figcaption>
+      </figure>
+      <p>
+        The original site had several issues:
+      </p>
+      <ul>
+        <li><strong>Efficiency:</strong> No search bar; links are unorganized.</li>
+        <li><strong>Accessibility gaps:</strong> Missing ARIA labels (WebAIM WAVE).</li>
+        <li><strong>Lack of hierarchy:</strong> All text and links look identical.</li>
+      </ul>
+    </section>
 
-      <!-- Research -->
-      <section>
-        <h2>Research</h2>
-        <p>Summarize user interviews, competitive analysis, surveys, or analytics you used to inform your design:</p>
-        <ul>
-          <li>Interviewed 5 commuters to understand kiosk pain points</li>
-          <li>Ran a timed usability test on the original interface</li>
-          <li>Reviewed film festival feedback for pacing &amp; tone</li>
-        </ul>
-      </section>
+    <!-- Analysis -->
+    <section id="analysis">
+      <h2>Visual Style Guide &amp; Responsive Mockups</h2>
+      <p>
+        To give the look a little bit more style, while preserving the no-frills brand, I first created a visual style guide. I
+        focused on
+        a color palette, typography, and component states, then created
+        responsive specifc mockups for mobile, tablet, and desktop.
+      </p>
+      <h3>Visual Style Guide</h3>
+      <figure>
+        <img src="images/colordesign.png" alt="Color palette design">
+      </figure>
 
-      <!-- Process & Iterations -->
-      <section>
-        <h2>Process &amp; Iterations</h2>
-        <p>Key wireframes, state diagrams, and design iterations:</p>
-        <figure>
-          <img src="images/wireframe-1.png" alt="Low-fidelity wireframe" />
-          <figcaption>First wireframe mapping user flow.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/wireframe-2.png" alt="Refined wireframe" />
-          <figcaption>Second iteration with card-based layout.</figcaption>
-        </figure>
-      </section>
+      <h3>Mobile Mockup</h3>
+      <figure>
+        <img src="images/mobilemock.png" alt="Mobile redesign mockup">
+      </figure>
 
-      <!-- Solution -->
-      <section>
-        <h2>Solution</h2>
-        <p>Present your final mockups and explain how they solve the initial problems.</p>
-        <figure>
-          <img src="images/final-mockup.png" alt="Final mockup screenshot" />
-          <figcaption>Final responsive design on desktop.</figcaption>
-        </figure>
-      </section>
+      <h3>Tablet Mockup</h3>
+      <figure>
+        <img src="images/tabletmock.png" alt="Tablet redesign mockup">
+      </figure>
 
-      <!-- Learnings & Next Steps -->
-      <section>
-        <h2>Learnings &amp; Next Steps</h2>
-        <ul>
-          <li>Keyboard users appreciated the skip-link and focus outlines.</li>
-          <li>Further A/B testing recommended for CTA wording.</li>
-          <li>Next: implement live search suggestions via JavaScript.</li>
-        </ul>
-      </section>
-    </div>
-  </main>
+      <h3>Desktop Mockup</h3>
+      <figure>
+        <img src="images/desktopmock.png" alt="Desktop redesign mockup">
+      </figure>
+    </section>
 
-  <!-- Site Footer -->
-  <footer class="site-footer">
-    <p>© 2025 Elizabeth • Designed &amp; Built by Me</p>
-  </footer>
+    <!-- Implementation -->
+    <section id="redesign">
+      <h2>Implementation</h2>
+      <p>
+       I built the new homepage with HTML and CSS, enhancing core weaknesses of the original site.:
+      </p>
+      <ul>
+        <li>A search bar at the top.</li>
+        <li>Clear heading hierarchy and organized links.</li>
+        <li>ARIA labels on key elements for screen-reader use.</li>
+      </ul>
+      <p>
+        <a href="https://www.berkshirehathaway.com/" target="_blank">Original Site</a>
+        &bull;
+        <a href="https://elokoyi1989.github.io/berskshire-redesign/" target="_blank">
+          Redesign
+        </a>
+      </p>
+      <figure>
+        <img src="images/redesign.png" alt="Screenshot of redesigned Berkshire Hathaway homepage">
+      </figure>
+    </section>
+
+    <!-- Conclusion -->
+    <section id="takeaways">
+      <h2>Conclusion</h2>
+      <p>
+        This redesign shows that even the most minimalist, bare-bones designs can 
+        improve accessibility and responsiveness without losing its core
+        identity. The story and brand of the Berkshire Hathaway homepage is one that is clearly important to the 
+        company, and it was important to me to preserve that while also making it more usable.
+      </p>
+    </section>
+
+
 </body>
 </html>

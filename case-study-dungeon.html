@@ -61,75 +61,93 @@
     </nav>
   </header>
 
-    <!-- Case Study Content -->
-    <div class="container">
-      <!-- Role & Team -->
-      <section>
-        <h2>Role &amp; Team</h2>
-        <p><strong>My role:</strong> UX Designer &amp; Producer</p>
-        <p><strong>Team:</strong> Collaborated with 2 filmmakers, 1 developer</p>
-      </section>
+<!-- Case Study Content -->
+  <div class="container">
+    <!-- Role & Team -->
+    <section>
+      <h2>Role &amp; Team</h2>
+      <p><strong>My role:</strong> Graphics Engineer &amp; Interaction Designer</p>
+      <p><strong>Team:</strong> Collaborated with two classmates on C++/OpenGL rendering</p>
+    </section>
 
-      <!-- Context & Problem -->
-      <section>
-        <h2>Context &amp; Problem</h2>
-        <p>Describe where this project came from, who it’s for, and the core problem you solved.</p>
-        <figure>
-          <img src="images/project-brief.png" alt="Project brief screenshot" />
-          <figcaption>Original project brief outlining the problem.</figcaption>
-        </figure>
-      </section>
+    <!-- Context & Problem -->
+    <section>
+      <h2>Context &amp; Problem</h2>
+      <p>
+        For “Dungeon Masters” we set out to build an immersive, procedurally-generated
+        dungeon simulator.
+      </p>
+      <ul>
+        <li>
+          <strong>Technical pipeline:</strong> Implement the OpenGL real-time
+          rendering pipeline in C++ using normal mapping, Bézier-curve
+          camera paths, and dynamic lighting.
+        </li>
+        <li>
+          <strong>Game design:</strong> Craft the visual basis for a video game or animation by randomly
+          generating maze layouts and guiding the user’s viewpoint along smooth,
+          cinematic camera curves.
+        </li>
+      </ul>
+      <figure>
+        <img src="images/dungeon.png" alt="Screenshot of the procedurally generated dungeon">
+        <figcaption>One of many dungeon layouts.</figcaption>
+      </figure>
+    </section>
 
-      <!-- Research -->
-      <section>
-        <h2>Research</h2>
-        <p>Summarize user interviews, competitive analysis, surveys, or analytics you used to inform your design:</p>
-        <ul>
-          <li>Interviewed 5 commuters to understand kiosk pain points</li>
-          <li>Ran a timed usability test on the original interface</li>
-          <li>Reviewed film festival feedback for pacing &amp; tone</li>
-        </ul>
-      </section>
+    <!-- Research -->
+    <section>
+      <h2>Research</h2>
+      <p>
+     I took CS1230: Introduction to Graphics at Brown University. It offered an in-depth exploration of fundamental concepts in 2D and 3D computer graphics. 
 
-      <!-- Process & Iterations -->
-      <section>
-        <h2>Process &amp; Iterations</h2>
-        <p>Key wireframes, state diagrams, and design iterations:</p>
-        <figure>
-          <img src="images/wireframe-1.png" alt="Low-fidelity wireframe" />
-          <figcaption>First wireframe mapping user flow.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/wireframe-2.png" alt="Refined wireframe" />
-          <figcaption>Second iteration with card-based layout.</figcaption>
-        </figure>
-      </section>
+     
+    
+      </p>
+      <ul>
+        <li>     It introduces 2D raster graphics techniques (image creation/manipulation/filtering)</li>
+        <li>3D modeling, viewing, and rendering (using both raytracing and real-time rendering on the GPU).</li>
+        <li> Learned to program in C++ and the shading language GLSL, and to use the OpenGL library.</li>
 
-      <!-- Solution -->
-      <section>
-        <h2>Solution</h2>
-        <p>Present your final mockups and explain how they solve the initial problems.</p>
-        <figure>
-          <img src="images/final-mockup.png" alt="Final mockup screenshot" />
-          <figcaption>Final responsive design on desktop.</figcaption>
-        </figure>
-      </section>
+      </ul>
+    </section>
 
-      <!-- Learnings & Next Steps -->
-      <section>
-        <h2>Learnings &amp; Next Steps</h2>
-        <ul>
-          <li>Keyboard users appreciated the skip-link and focus outlines.</li>
-          <li>Further A/B testing recommended for CTA wording.</li>
-          <li>Next: implement live search suggestions via JavaScript.</li>
-        </ul>
-      </section>
-    </div>
-  </main>
+    <!-- Process & Iterations -->
+    <section>
+      <h2>Process &amp; Iterations</h2>
+      <p>Key steps in building our simulation:</p>
+      <ul>
+        <li><strong>Normal mapping:</strong> Layer textures to give walls and floors realistic texture.</li>
+        <li><strong>Bezier camera:</strong> Program smooth camera movement using the Bezier algorithm.</li>
+        <li><strong>Random generator:</strong> Used A* algorithm to create physical random connections.</li>
+      </ul>
+      <figure>
+        <img src="images/bump.png" alt=" normal and bump mapping">
+      </figure>
+    </section>
 
-  <!-- Site Footer -->
-  <footer class="site-footer">
-    <p>© 2025 Elizabeth • Designed &amp; Built by Me</p>
-  </footer>
+    <!-- Solution -->
+    <section>
+      <h2>Solution</h2>
+      <p>
+        The final demo:
+      </p>
+      <ul>
+        <li>A  real-time OpenGL pipeline with customizable shaders.</li>
+        <li>Procedural dungeon layouts that can be changed by the user.</li>
+        <li>Smooth Bézier-curve camera paths that guide the user throughout the scene.</li>
+      </ul>
+    </section>
+
+    <!-- Learnings & Next Steps -->
+    <section>
+      <h2>Learnings &amp; Next Steps</h2>
+      <ul>
+        <li>A new interest in animation and game design.</li>
+        <li>A crash course on graphics and graphics computing.</li>
+        <li>Insight into design beyond web and branding. I got to consider what it might look like to design a world.</li>
+      </ul>
+    </section>
+  </div>
 </body>
 </html>
