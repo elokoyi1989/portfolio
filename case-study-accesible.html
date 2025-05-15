@@ -60,71 +60,69 @@
       </ul>
     </nav>
   </header>
+ 
+   <body>
 
-    <!-- Case Study Content -->
-    <div class="container">
-      <!-- Role & Team -->
-      <section>
-        <h2>Role &amp; Team</h2>
-        <p><strong>My role:</strong> UX Designer &amp; 
-      </section>
+  <!-- Case Study Content -->
+  <div class="container">
+    <!-- Project Background -->
+    <section id="overview">
+      <h2>Story &amp; Scope</h2>
+      <p>
+        In “Accessible Components” I set out to reimagine
+        the Mac File Navigator’s dropdown.
+        Though dropdowns seem simple, they can often be exclusive to
+        keyboard and screen-reader users. My goal was to uncover 
+        a more seamless experience for all users.
+      </p>
+    </section>
 
-      <!-- Context & Problem -->
-      <section>
-        <h2>Context &amp; Problem</h2>
-        <p>Describe where this project came from, who it’s for, and the core problem you solved.</p>
-        <figure>
-          <img src="images/project-brief.png" alt="Project brief screenshot" />
-          <figcaption>Original project brief outlining the problem.</figcaption>
-        </figure>
-      </section>
+    <!-- Analysis -->
+    <section id="analysis">
+      <h2>Accessibility Audit</h2>
+      <p>
+        I compared dropdowns in Netflix, YouTube, and the Mac File 
+        Navigator under both mouse and keyboard use. Key findings:
+      </p>
+      <ul>
+        <li>No visible ARIA labels or skip-links, confusing screen readers.</li>
+        <li>Keyboard users forced to tab through every menu item.</li>
+        <li>Mouse focus rings missing or inconsistent.</li>
+      </ul>
+      <figure>
+        <img src="images/initialmouse-keyboar.jpeg" alt="Original interaction state model" />
+        <figcaption>Mouse vs. keyboard state model.</figcaption>
+      </figure>
+    </section>
 
-      <!-- Research -->
-      <section>
-        <h2>Research</h2>
-        <p>Summarize user interviews, competitive analysis, surveys, or analytics you used to inform your design:</p>
-        <ul>
-          <li>Interviewed 5 commuters to understand kiosk pain points</li>
-          <li>Ran a timed usability test on the original interface</li>
-          <li>Reviewed film festival feedback for pacing &amp; tone</li>
-        </ul>
-      </section>
+    <!-- Redesign Approach -->
+    <section id="redesign">
+      <h2>The Redesign</h2>
+      <p>
+       
+      </p>
+      <figure>
+        <img src="images/New-d.png" alt="Final dropdown mockup" />
+        <figcaption>Final mockup with visible focus ring and ARIA labels.</figcaption>
+      </figure>
 
-      <!-- Process & Iterations -->
-      <section>
-        <h2>Process &amp; Iterations</h2>
-        <p>Key wireframes, state diagrams, and design iterations:</p>
-        <figure>
-          <img src="images/wireframe-1.png" alt="Low-fidelity wireframe" />
-          <figcaption>First wireframe mapping user flow.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/wireframe-2.png" alt="Refined wireframe" />
-          <figcaption>Second iteration with card-based layout.</figcaption>
-        </figure>
-      </section>
+      <h3>Key Enhancements</h3>
+      <ul>
+        <li><strong>Lifted focus ring</strong>—always visible for keyboard users.</li>
+        <li><strong>First-letter navigation</strong>—type “T” to jump to “Tools.”</li>
+        <li><strong>Robust ARIA labels</strong>—clear context for screen readers.</li>
+      </ul>
+    </section>
 
-      <!-- Solution -->
-      <section>
-        <h2>Solution</h2>
-        <p>Present your final mockups and explain how they solve the initial problems.</p>
-        <figure>
-          <img src="images/final-mockup.png" alt="Final mockup screenshot" />
-          <figcaption>Final responsive design on desktop.</figcaption>
-        </figure>
-      </section>
-
-      <!-- Learnings & Next Steps -->
-      <section>
-        <h2>Learnings &amp; Next Steps</h2>
-        <ul>
-          <li>Keyboard users appreciated the skip-link and focus outlines.</li>
-          <li>Further A/B testing recommended for CTA wording.</li>
-          <li>Next: implement live search suggestions via JavaScript.</li>
-        </ul>
-      </section>
-    </div>
-  </main>
+    <!-- Conclusion -->
+    <section id="takeaways">
+      <h2>Takeaways</h2>
+      <p>
+        Good design tells a story that everyone can access. I learned about the importance of considering 
+        all angles of design and putting myself into someone else's shoes when it comes to accessibility.
+      </p>
+    </section>
+  </div>
 
   <!-- Site Footer -->
   <footer class="site-footer">

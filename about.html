@@ -3,67 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me | Creative Portfolio</title>
+    <title>About Me</title>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css" />
     <style>
-        /*—— Brand Palette ——*/
-        :root {
-          --clr-jasmine:   #F4D58D;
-          --clr-powder:    #A9BCD0;
-          --clr-orange:    #BF0603;
-          --clr-charcoal:  #373F51;
-          --ff-heading:    'Tagesschrift', serif;
-          --ff-body:       'Fira Sans', sans-serif;
-        }
-
-        /*—— Reset + Base —————————————————————————*/
-        *,
-        *::before,
-        *::after { box-sizing: border-box; margin:0; padding:0; }
-        body {
-          font-family: var(--ff-body);
-          background: var(--clr-jasmine);
-          color: var(--clr-charcoal);
-          line-height: 1.5;
-          min-height: 100vh;
-        }
-
-        /*—— Header ————————————————————————————————————*/
-        .site-header {
-          background: var(--clr-charcoal);
-          color: white;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding: 1rem 2rem;
-        }
-        .logo h1 {
-          font-family: var(--ff-heading);
-          font-size: 2rem;
-          margin-bottom: 0.25rem;
-        }
-        .logo .tagline {
-          font-size: 1rem;
-          color: var(--clr-powder);
-        }
-        .main-nav ul {
-          list-style: none;
-          display: flex;
-          gap: 1.5rem;
-        }
-        .main-nav a {
-          color: var(--clr-jasmine);
-          font-weight: 600;
-          text-decoration: none;
-          padding: 0.5rem;
-          border-radius: 4px;
-          transition: background 0.2s;
-        }
-        .main-nav a:hover {
-          background: var(--clr-orange);
-          color: white;
-        }
-
         /* About Page Specific Styles */
         .about-container {
             max-width: 1000px;
@@ -202,7 +145,7 @@
         }
 
       
-        /*—— Responsive Breakpoints ———————————————————*/
+        /*—— Responsive ———————————————————*/
         @media (max-width: 768px) {
             .about-content {
                 grid-template-columns: 1fr;
@@ -280,7 +223,7 @@
         <div class="footer-cta">
             <h3>Let's Create Something Together!</h3>
             <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
-            <a href="contact.html" class="cta-button">Get In Touch</a>
+            <a href="mailto:elizabethlokoyi@gmail.com:" class="cta-button">Get In Touch</a>
         </div>
     </main>
 
